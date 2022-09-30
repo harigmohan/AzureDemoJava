@@ -36,8 +36,11 @@ stages:
         mavenPomFile: 'MyWebApp/pom.xml'
         publishJUnitResults: true
         testResultsFiles: '**/surefire-reports/TEST-*.xml'
-        javaHomeOption: 'JDKVersion'
-        mavenVersionOption: 'Default'
+        javaHomeOption: 'Path'
+        jdkDirectory: 'C:\Program Files\Java\jdk1.7.0_80'
+        mavenVersionOption: 'Path'
+        mavenDirectory: 'C:\Program Files\apache-maven-3.8.6'
+        mavenSetM2Home: true
         mavenAuthenticateFeed: false
         effectivePomSkip: false
         sonarQubeRunAnalysis: false
